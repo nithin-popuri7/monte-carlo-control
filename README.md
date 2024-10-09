@@ -79,11 +79,11 @@ def mc_control(env, gamma=1.0, init_alpha=0.5, min_alpha=0.01, alpha_decay_ratio
 
 ### State - Value Function
 
-![image](https://github.com/user-attachments/assets/f3d32f60-f60f-4c14-a79b-90ad2f1fb916)
+![image](https://github.com/user-attachments/assets/6bc0a4fd-99ba-4f72-8b95-b8558f7ef08d)
 
  ### Action - Value Function
 
-![image](https://github.com/user-attachments/assets/6bc0a4fd-99ba-4f72-8b95-b8558f7ef08d)
+![image](https://github.com/user-attachments/assets/f3d32f60-f60f-4c14-a79b-90ad2f1fb916)
 
 
 ### Policy
@@ -94,7 +94,6 @@ def mc_control(env, gamma=1.0, init_alpha=0.5, min_alpha=0.01, alpha_decay_ratio
 
 ![exp5 3](https://github.com/user-attachments/assets/d7144752-dbb9-4252-aa84-527aaba1e50b)
 
-![exp5 4](https://github.com/user-attachments/assets/02bee0f3-6ecf-43b1-a678-f01215f2c11d)
 
 ## RESULT:
 
