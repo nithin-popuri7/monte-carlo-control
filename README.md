@@ -83,11 +83,12 @@ def mc_control(env, gamma=1.0, init_alpha=0.5, min_alpha=0.01, alpha_decay_ratio
 
  ### Action - Value Function
 
-![exp5 1](https://github.com/user-attachments/assets/bb4f5d39-b051-487b-88e0-53d297e03896)
+![image](https://github.com/user-attachments/assets/6bc0a4fd-99ba-4f72-8b95-b8558f7ef08d)
+
 
 ### Policy
 
-![exp5 2](https://github.com/user-attachments/assets/7a1077d4-46ff-4897-9355-6ce9a95016d7)
+![exp5 3](https://github.com/user-attachments/assets/f82b9b95-6b42-4145-a3f9-43f6daa16d28)
 
 ### Success Percentage of Policy
 
