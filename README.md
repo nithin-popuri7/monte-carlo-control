@@ -92,7 +92,7 @@ def mc_control(env, gamma=1.0, init_alpha=0.5, min_alpha=0.01, alpha_decay_ratio
 
 ### Success Percentage of Policy
 
-![exp5 3](https://github.com/user-attachments/assets/d7144752-dbb9-4252-aa84-527aaba1e50b)
+![image](https://github.com/user-attachments/assets/59a11f16-5802-464d-a080-d428a92c8434)
 
 
 ## RESULT:
