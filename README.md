@@ -10,7 +10,8 @@ The FrozenLake environment in OpenAI Gym is a gridworld problem that challenges 
 Initialize the state value function V(s) and the policy π(s) arbitrarily.
 Generate an episode using π(s) and store the state, action, and reward sequence.
 For each state s appearing in the episode:
-G ← return following the first occurrence of s
+*
+* G ← return following the first occurrence of s
 Append G to Returns(s)
 V(s) ← average(Returns(s))
 For each state s in the episode:
