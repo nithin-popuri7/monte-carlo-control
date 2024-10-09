@@ -24,8 +24,10 @@ Q: The Q-table.
 axis: The axis along which to find the maximum value.
 
 ## MONTE CARLO CONTROL FUNCTION
+```
 Developed By:P.Siva Naga Nithin
 Reg.NO:212221240037
+```
 ```
 import numpy as np
 from tqdm import tqdm
@@ -77,7 +79,7 @@ def mc_control(env, gamma=1.0, init_alpha=0.5, min_alpha=0.01, alpha_decay_ratio
 
 ### State - Value Function
 
-![ex5](https://github.com/user-attachments/assets/650bd50e-932a-4140-93bd-9ed784bd8465)
+![image](https://github.com/user-attachments/assets/f3d32f60-f60f-4c14-a79b-90ad2f1fb916)
 
  ### Action - Value Function
 
