@@ -7,23 +7,18 @@ To develop a Python program to find the optimal policy for the given RL environm
 The FrozenLake environment in OpenAI Gym is a gridworld problem that challenges reinforcement learning agents to navigate a slippery terrain to reach a goal state while avoiding hazards. Note that the environment is closed with a fence, so the agent cannot leave the gridworld.
 
 ## MONTE CARLO CONTROL ALGORITHM
-Initialize the state value function V(s) and the policy π(s) arbitrarily.
-Generate an episode using π(s) and store the state, action, and reward sequence.
-For each state s appearing in the episode:
-*
-* G ← return following the first occurrence of s
-Append G to Returns(s)
-V(s) ← average(Returns(s))
-For each state s in the episode:
-π(s) ← argmax_a ∑_s' P(s'|s,a)V(s')
-Repeat steps 2-4 until the policy converges.
-Use the function decay_schedule to decay the value of epsilon and alpha.
-Use the function gen_traj to generate a trajectory.
-Use the function tqdm to display the progress bar.
-After the policy converges, use the function np.argmax to find the optimal policy. The function takes the following arguments:
-Q: The Q-table.
-axis: The axis along which to find the maximum value.
+1. Initialize Q(s, a) arbitrarily for all state-action pairs
+2. Initialize returns(s, a) to empty for all state-action pairs
+3. Initialize policy π(s) to be arbitrary (e.g., ε-greedy)
 
+4. For each episode:<BR>
+   a. Generate an episode using policy π<BR>
+   b. For each state-action pair (s, a) in the episode:<BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i.   Calculate G (return) for that (s, a) pair<BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ii.  Append G to returns(s, a)<BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iii. Calculate the average of returns(s, a)<BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iv.  Update Q(s, a) using the average return<BR>
+   c. Update policy π(s) based on Q(s, a)
 ## MONTE CARLO CONTROL FUNCTION
 ```
 Developed By:P.Siva Naga Nithin
